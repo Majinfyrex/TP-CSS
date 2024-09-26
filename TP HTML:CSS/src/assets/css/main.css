@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*Style appliqué à toute la page*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+body{
+    background: aliceblue;
+
+}
+
+/*style appliqué a l'entête*/
+
+header {
+    background: linear-Gradient(to right, blue, red);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    :hover{
+        color:dodgerblue;
+        background-color: white;
+    }
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+/*style appliqué sous pour le à propos*/
+
+.about {
+
+}
+
+.about h2 {
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: dodgerblue;
+}
+
+.about p {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+/*style appliqué pour les projets*/
+
+.projects {
+    background-color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 3rem 1rem 1rem;
+}
+
+.projects h2 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: dodgerblue;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    gap: 1rem;
+}
+
+.project {
+    display: grid;
+    background-color: #e6e6e7;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.project h3{
+    color: dodgerblue;
+}
+
+.project p{
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/*style appliqué pour le bas de la page*/
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 295px;
+}
+
+/*style pour mobile*/
+
+@media (max-width: 475px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 2rem;
+        display: block;
+        align-content: space-between;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+
+    }
+
+    nav ul {
+        text-align: center;
+        gap: 1rem;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+}
